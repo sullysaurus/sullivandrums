@@ -21,7 +21,6 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-
         <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
@@ -34,7 +33,12 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            Hi my name is Danny and I am a drummer here in Raleigh, NC. Originally from New York, I grew up the grandson of a jazz drummer and still play his kit today (the background of this website). I'm always looking to teach new students, collaborate with other musicians or just talk drums. If you are looking for any of the above, connect with me on Instagram or send me an email. Thanks!
+            Hi my name is Danny and I am a drummer here in Raleigh, NC.
+            Originally from New York, I grew up the grandson of a jazz drummer
+            and still play his kit today (the background of this website). I'm
+            always looking to teach new students, collaborate with other
+            musicians or just talk drums. If you are looking for any of the
+            above, connect with me on Instagram or send me an email. Thanks!
           </p>
           {close}
         </article>
@@ -52,10 +56,10 @@ class Main extends React.Component {
           </span>
           <p>
             <h3>I'm always looking for new musicians to collaborate with.</h3>
-            
-            <h4>My current recording set up</h4> 
-            
-            <b>Drums</b> 
+
+            <h4>My current recording set up</h4>
+
+            <b>Drums</b>
             <ul>
               <li>1959 trans badge Ludwig kit</li>
               <li>New and vintage Zildjian / Istanbul Agop cymbals</li>
@@ -70,18 +74,30 @@ class Main extends React.Component {
               <li>Sure Beta 52A</li>
               <li>Heil PR28 (2)</li>
             </ul>
-            
+
             <b>Projects</b>
             <ul>
-              <li><a href="https://soundcloud.com/deadseasparrow/sets/up-the-mountain/s-mE9K2MjiB9W">Dead Sea Sparrow</a></li>
-              <li><a href="http://www.withourmindsandourmachines.com/">Islandverse</a></li>
+              <li>
+                <a href="https://soundcloud.com/deadseasparrow/sets/up-the-mountain/s-mE9K2MjiB9W">
+                  Dead Sea Sparrow
+                </a>
+              </li>
+              <li>
+                <a href="http://www.withourmindsandourmachines.com/">
+                  Islandverse
+                </a>
+              </li>
             </ul>
 
             <b>Gear For Sale</b>
             <ul>
-              <li> <a href="https://reverb.com/shop/sullivandrumshop">Sullivan Drum Shop</a></li>
+              <li>
+                {' '}
+                <a href="https://reverb.com/shop/sullivandrumshop">
+                  Sullivan Drum Shop
+                </a>
+              </li>
             </ul>
-      
           </p>
           {close}
         </article>
@@ -97,11 +113,8 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <p>
-            Coming soon.
-          </p>
-          <p>
-          </p>
+          <p>Coming soon.</p>
+          <p></p>
           {close}
         </article>
 
@@ -113,39 +126,38 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#" name="contact" netlify>
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
+          <form name="contact" netlify>
+            <p>
+              <label>
+                Name <input type="text" name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Email <input type="email" name="email" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Message <textarea name="message" id="message" rows="4"></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+           
           </form>
           <ul className="icons">
             <li>
-              <a href="https://instagram.com/sullivandrums" className="icon fa-instagram">
+              <a
+                href="https://instagram.com/sullivandrums"
+                className="icon fa-instagram"
+              >
                 <span className="label">Instagram</span>
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="icon fa-youtube"
-              >
+              <a href="#" className="icon fa-youtube">
                 <span className="label">Youtube</span>
               </a>
             </li>
