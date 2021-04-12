@@ -69,9 +69,9 @@ class Main extends React.Component {
             <ul>
               <li> Mac | Logic | Focusrite 18i20</li>
               <li>Beyerdynamic m160 (2)</li>
-              <li>Sure SM7B </li>
-              <li>Sure SM57</li>
-              <li>Sure Beta 52A</li>
+              <li>Shure SM7B </li>
+              <li>Shure SM57</li>
+              <li>Shure Beta 52A</li>
               <li>Heil PR28 (2)</li>
             </ul>
 
