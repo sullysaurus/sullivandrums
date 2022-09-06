@@ -194,8 +194,14 @@
 					Please let me know which days/times you would prefer. I am available to show the space as well, just
 					let me know.</p>
 				<section>
-					<form name="rehearsal" method="post" action="#" data-netlify="true">
+					<form name="rehearsal" method="post" action="#" data-netlify="true" data-netlify-recaptcha="true">
 						<div class="fields">
+							<div class="field" data-netlify-recaptcha="true">
+							</div>
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" value="" placeholder="Kurt Kobain" />
+							</div>
 							<div class="field half">
 								<label for="name">Name</label>
 								<input type="text" name="name" id="name" value="" placeholder="Kurt Kobain" />
