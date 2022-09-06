@@ -38,6 +38,7 @@
 					<li><a href="#music">Music</a></li>
 					<li><a href="#videos">Videos</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="#rehearsal">Rehearsal</a></li>
 					<!--<li><a href="#elements">Elements</a></li>-->
 				</ul>
 			</nav>
@@ -159,7 +160,7 @@
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<form method="post" action="#" method="POST" data-netlify="true">
+				<form name="contact" method="post" action="#" method="POST" data-netlify="true">
 					<div class="fields">
 						<div class="field half">
 							<label for="name">Name</label>
@@ -183,6 +184,58 @@
 					<li><a href="http://www.instsagram.com/sullivandrums" class="icon brands fa-instagram"><span
 								class="label">Instagram</span></a></li>
 				</ul>
+			</article>
+
+			<!-- Contact -->
+			<article id="rehearsal">
+				<span class="image main"><img src="images/space.jpg" alt="" /></span>
+				<h2 class="major">Rehearsal</h2>
+				<p>I currently have monthly spots available for $150 a month. For example, every Monday from 6-10pm.
+					Please let me know which days/times you would prefer. I am available to show the space as well, just
+					let me know.</p>
+				<section>
+					<form name="rehearsal" method="post" action="#" data-netlify="true">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" value="" placeholder="Kurt Kobain" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" value="" placeholder="kurt@nirvana.com" />
+							</div>
+							<div class="field half">
+								<label for="social">Insta, Facebook or LinkedIn</label>
+								<input type="text" name="social" id="social" value=""
+									placeholder="instagram.com/kkobain" />
+							</div>
+							<div class="field half">
+								<label for="members">Band Member Total</label>
+								<select name="members" id="members">
+									<option value="">-</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+								</select>
+							</div>
+
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message"
+									placeholder="Please let me know which days and times you prefer and I will email you."
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
+
 			</article>
 
 			<!-- Elements -->
@@ -439,7 +492,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; 2021 Sullivan Drums</p>
+			<p class="copyright">&copy; 2022 Sullivan Drums</p>
 		</footer>
 
 	</div>
